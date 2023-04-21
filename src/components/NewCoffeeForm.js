@@ -11,6 +11,7 @@ function NewCoffeeForm(props) {
       name: event.target.name.value || "No Name",
       description: event.target.description.value || "No Description",
       price: event.target.price.value || 0,
+      date :event.target.date.value,
       quantity: event.target.quantity.value || 0,
       id: v4()
     });
