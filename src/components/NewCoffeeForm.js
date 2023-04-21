@@ -9,7 +9,7 @@ function NewCoffeeForm(props) {
     event.preventDefault();
     props.onNewCoffeeCreation({
       name: event.target.name.value || "No Name",
-      imgUrl: event.target.imgUrl.value || "https://www.pngkey.com/png/detail/243-2434212_shipping-box-png-banner-transparent-download-shipping-boxes.png",
+      imgUrl: event.target.imgUrl.value || "https://www.pngkey.com/maxpic/u2q8t4t4r5r5e6a9/",
       description: event.target.description.value || "No Description",
       price: event.target.price.value || 0,
       quantity: event.target.quantity.value || 0,
