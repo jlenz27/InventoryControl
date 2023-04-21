@@ -17,6 +17,23 @@ class CoffeeControl extends React.Component {
           description: "Blueberry and vanilla cream flavored coffee", 
           price: 100, 
           quantity: 50, 
+          date: '04/20/2023',
+          id: v4()
+        },
+        {
+          name: "Columbian Dark Roast", 
+          description: "Dark Roast Coffee", 
+          price: 125, 
+          quantity: 32, 
+          date: '04/20/2023',
+          id: v4()
+        },
+        {
+          name: "Columbian Light Roast", 
+          description: "Light Roast", 
+          price: 105, 
+          quantity: 12, 
+          date: '04/20/2023',
           id: v4()
         }
       ],

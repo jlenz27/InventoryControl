@@ -8,8 +8,9 @@ const CoffeeDisplay = (props) => {
       <Toast className="mb-4">
       <Toast.Header closeButton={false}>
     <div onClick={() => props.whenCoffeeClicked(props.id)}>
-      <p>Coffee Name:  {props.name}</p>
-      <p>Cups Left:{props.quantity}/50</p>
+      <p><strong>Coffee Name:  </strong>  {props.name}</p>
+      <p><strong>Cups Left:  </strong>{props.quantity}/50</p>
+
     </div>
     </Toast.Header>
     </Toast>

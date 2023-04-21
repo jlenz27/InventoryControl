@@ -14,6 +14,9 @@ const CoffeeDetails = (props) => {
       <p>{coffee.description}</p>
       <p>Price: {coffee.price}$</p>
       <p>Cups of Coffee Left: {coffee.quantity} / 50</p>
+      <p>Date Purchased: {coffee.date} </p>
+
+
       <hr />
       <Button variant="primary" onClick={onClickingUnitSold}>Mark a single cup sold</Button>
       <Button variant="primary" onClick={onClickingEdit}>Update Coffee</Button>
