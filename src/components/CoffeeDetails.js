@@ -1,5 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Button from 'react-bootstrap/Button';
+
 
 const CoffeeDetails = (props) => {
   const { coffee, onClickingDelete, onClickingUnitSold,  onClickingEdit } = props;

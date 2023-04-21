@@ -23,13 +23,13 @@ const ReusableForm = (props) => {
     </Form.Group>
 
     <Form.Group controlId="date">
-      <Form.Label> Date Purchased</Form.Label>
-      <Form.Control type="date" placeholder="Enter sighting date" />
+      <Form.Label>Purchase Date</Form.Label>
+      <Form.Control type="date" placeholder="Enter purchase date" />
     </Form.Group>
 
     <Form.Group controlId="quantity">
-      <Form.Label>Quantity out of 50 max </Form.Label>
-      <Form.Control type='number'name='quantity' placeholder='' max="50" min="0"/>
+      <Form.Label> </Form.Label>
+      <Form.Control type='number'name='quantity' placeholder='Quantity of cups left out of 50 max ' max="50" min="0"/>
     </Form.Group>
 
     <Button variant="primary" type="submit" style={{margin: '10px'}}>{props.buttonText}</Button>
