@@ -10,7 +10,8 @@ const CoffeeList = (props) => {
         <CoffeeDisplay
           whenCoffeeClicked={props.onCoffeeSelection}
           name={coffee.name}
-          imgUrl={coffee.imgUrl}
+          description={coffee.description}
+          quantity={coffee.quantity}
           id={coffee.id}
           key={coffee.id}
         />

@@ -3,6 +3,7 @@ import CoffeeList from './CoffeeList';
 import NewCoffeeForm from './NewCoffeeForm';
 import CoffeeDetails from './CoffeeDetails';
 import EditCoffeeForm from './EditCoffeeForm';
+import Button from 'react-bootstrap/Button';
 import { v4 } from 'uuid';
 
 class CoffeeControl extends React.Component {
@@ -12,11 +13,10 @@ class CoffeeControl extends React.Component {
       formVisibleOnPage: false,
       mainCoffeeList: [
         {
-          name: "Colombian Dark", 
-          description: "Colobian Dark Roast from the 2022 harvest", 
+          name: "BlueBerry ShortCake", 
+          description: "Blueberry and vanilla cream flavored coffee", 
           price: 100, 
           quantity: 50, 
-          imgUrl: "https://www.pngkey.com/maxpic/u2q8t4t4r5r5e6a9/",
           id: v4()
         }
       ],
@@ -101,7 +101,7 @@ class CoffeeControl extends React.Component {
     return (
       <React.Fragment>
         {currentlyVisibleState}
-        <button onClick={this.handleClick}>{buttonText}</button>
+        <Button variant="primary" onClick={this.handleClick}>{buttonText}</Button>
       </React.Fragment>
     );
   };

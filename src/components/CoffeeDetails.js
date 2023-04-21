@@ -10,15 +10,14 @@ const CoffeeDetails = (props) => {
     <React.Fragment>
       <h1>Coffee Details</h1>
       <hr />
-      <img src={coffee.imgUrl} alt="coffee"/>
       <h3>{coffee.name}</h3>
       <p>{coffee.description}</p>
       <p>Price: {coffee.price}$</p>
       <p>Cups of Coffee Left: {coffee.quantity} / 50</p>
       <hr />
-      <button onClick={onClickingUnitSold}>Mark a single cup sold</button>
-      <button onClick={() => onClickingDelete(coffee.id)}>Delete A coffee bag</button>
-      <button onClick={onClickingEdit}>Update Coffee</button>
+      <Button variant="primary" onClick={onClickingUnitSold}>Mark a single cup sold</Button>
+      <Button variant="primary" onClick={onClickingEdit}>Update Coffee</Button>
+      <Button variant="danger" onClick={() => onClickingDelete(coffee.id)}>Delete A coffee bag</Button>
     </React.Fragment>
   );
 }
