@@ -16,6 +16,10 @@
 * Babel
 * Bootstrap
 
+## Mockup
+![mockup](/coffeeRoastersDraw.png)
+
+
 ## Component Diagram
 ```
 App.js
