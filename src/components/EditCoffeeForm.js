@@ -9,10 +9,9 @@ const EditCoffeeForm = (props) => {
     event.preventDefault();
     props.onEditCoffee({
       name: event.target.name.value || coffee.name,
-      imgUrl: event.target.imgUrl.value || coffee.imgUrl,
       description: event.target.description.value || coffee.description,
       price: event.target.price.value || coffee.price,
-      quantity: event.target.quantity.value || coffee.quantity,
+      quantity: parseInt(event.target.quantity.value) || coffee.quantity,
       id: coffee.id,
     });
   }
